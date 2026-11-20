@@ -1,0 +1,24 @@
+{
+  "schemaVersion": 1,
+  "channel": "stable",
+  "versionCode": 23,
+  "versionName": "0.9.0",
+  "publishedAt": "2026-11-20T01:06:43Z",
+  "changelog": "手机CPE 首个公开测试版本，把 Root Android 手机作为持续运行的随身路由器和专用桌面使用。\n\n## 功能\n\n- Wi-Fi、USB、以太网共享选择持久保存，满足硬件条件时自动恢复；开机共享默认开启。\n- 大字上下行 M/s、日期/星期/时钟、运营商、制式、信号和热点设备数；底部图标按实际状态变色。\n- 长按进入 MCPE 设置，底部上划回原桌面；支持默认桌面、常亮和定时防烧屏位移。\n- 现代 libxposed API102：自动同步/申请作用域、系统框架守护、可选 HOME 接管和 VPN 上游适配。\n- ROOT 自动更新：下载后复验哈希/包名/版本/签名，由独立执行器完成覆盖安装与服务恢复。\n\n## 本版修正\n\n- 统一用户意图存储，拆分显示、共享协调、ROOT 会话与框架平台边界，修正异步启停、取消重连和 HOME 旋转重建。\n- USB Host 模式下不改变 gadget 共享，避免影响外接设备；独立 Host/Device 端口仍可共存。\n- 无以太网接口时保留选择并等待网卡；接口存在即可发起共享，不要求先有 carrier。系统接受启动后留出 30 秒等待实际接口，避免频繁重发。\n\n## 安装与验证\n\n- Android 9+，需要 ROOT；原生以太网共享需要 Android 11+ 及系统/网卡支持。LSP 功能需要支持 API102 的框架，启用和作用域变更后重启。\n- 版本 0.9.0 / versionCode 23，非 debuggable Release 变体，沿用此前开发签名以支持覆盖安装。暂未做混淆或加壳。\n- OnePlus 8T 已完成 ROOT 覆盖更新、共享恢复、框架强停/冻结/暂停、屏幕与 HOME 交互检查；86 项核心测试、11 项发布器测试通过。\n\n## 已知验证边界\n\n- Find X9 Pro / 系统16 的 0.8.1 曾报告授予 ROOT 后系统以太网共享无法开启，且 USB 共享关闭；本版已加入上述通用保护，但没有该设备的日志和关闭总守护对照结果，尚不能确认该问题已解决。\n- VPN 出口、USB 以太网硬件、多客户端、多用户及其他 Android/ROM 仍需对应设备验证。首次使用请先配置系统热点名称和密码。\n\nSHA-256：`380dd1c6f4ab58839e1e40fb3d98053d0cde21a97918751fc9e7a82a520216b0`\n",
+  "maxForcedVersionCode": 0,
+  "policyRevision": 1,
+  "sha256": "380dd1c6f4ab58839e1e40fb3d98053d0cde21a97918751fc9e7a82a520216b0",
+  "size": 20948894,
+  "urls": [
+    "https://v6.gh-proxy.org/https://github.com/daxiaamu/Mobile-CPE/releases/download/v0.9.0/PhoneCPE-0.9.0.apk",
+    "https://gh-proxy.org/https://github.com/daxiaamu/Mobile-CPE/releases/download/v0.9.0/PhoneCPE-0.9.0.apk",
+    "https://gh.3w.pm/https://github.com/daxiaamu/Mobile-CPE/releases/download/v0.9.0/PhoneCPE-0.9.0.apk",
+    "https://gh-proxy.com/https://github.com/daxiaamu/Mobile-CPE/releases/download/v0.9.0/PhoneCPE-0.9.0.apk",
+    "https://gh.monlor.com/https://github.com/daxiaamu/Mobile-CPE/releases/download/v0.9.0/PhoneCPE-0.9.0.apk",
+    "https://ghproxy.vip/https://github.com/daxiaamu/Mobile-CPE/releases/download/v0.9.0/PhoneCPE-0.9.0.apk?sha=380dd1c6f4ab58839e1e40fb3d98053d0cde21a97918751fc9e7a82a520216b0",
+    "https://ghfast.top/https://github.com/daxiaamu/Mobile-CPE/releases/download/v0.9.0/PhoneCPE-0.9.0.apk",
+    "https://ghproxy.net/https://github.com/daxiaamu/Mobile-CPE/releases/download/v0.9.0/PhoneCPE-0.9.0.apk",
+    "https://github.com/daxiaamu/Mobile-CPE/releases/download/v0.9.0/PhoneCPE-0.9.0.apk"
+  ],
+  "releaseUrl": "https://github.com/daxiaamu/Mobile-CPE/releases/tag/v0.9.0"
+}
