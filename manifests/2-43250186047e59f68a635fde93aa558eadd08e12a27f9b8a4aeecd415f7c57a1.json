@@ -1,0 +1,24 @@
+{
+  "schemaVersion": 1,
+  "channel": "stable",
+  "versionCode": 31,
+  "versionName": "0.10.2",
+  "publishedAt": "2026-11-20T09:04:02Z",
+  "changelog": "手机CPE 0.10.2（versionCode 31），继续公开测试。支持从此前同签名版本覆盖升级。\n\n## 更新内容\n\n- **默认桌面改为单一开关**：开启后设为手机CPE，关闭恢复原桌面；修复按 HOME 误跳原桌面的问题，保留底部上划进入原桌面。\n- **共享恢复与观察更可靠**：优先使用原生事件、实际接口类型与能力，识别以太网/NCM；区分请求已接受和接口真正开启，保留用户期望并按错误原因退避。\n- **可选 ColorOS 后台保护**：ROOT 监控进程对手机CPE 自身 UID 申请并续期限时保护，暂停后释放；普通电池豁免只管理本应用创建的记录。接口不兼容时继续使用原有守护。\n- **新增诊断历史与复制报告**：记录原生错误、ROM/Mainline、上游与 USB 驱动信息，不记录热点密码、SSID 或客户端地址。\n- **设置新增“查看源码”**，打开本项目 GitHub。\n- **Release 启用 R8**：代码优化、混淆和资源压缩；保留 ROOT 独立执行器与现代 Xposed 必要入口。APK 从约 21 MB 减至 **2.07 MB**。\n\n## 验证与安装\n\n- 111 项核心测试、11 项更新发布器测试，Debug/Release 构建、lint 与签名检查通过。\n- OnePlus 已验证 R8 版本之间的独立 ROOT 自动升级、共享/偏好恢复、默认桌面完整往返、源码链接和 API 102 服务连接。\n- Android 9+ 需要 ROOT；原生以太网共享需要 Android 11+ 和系统/网卡驱动支持。LSP 功能需支持 API 102 的框架，更新后需重启才能加载新模块代码。\n- 非调试 Release，沿用已有开发签名。附带 mapping 文件供开发者还原混淆堆栈。\n\n## 当前验证边界\n\n- Find 的已验证版本曾在保持 ROOT/模块/守护时，无需拔插扩展坞自行开机共享；原始 0.8.1 网卡未枚举问题的根因仍未证实，不保证所有启动条件均已修复。\n- 最终 R8 版在 Find 无线调试失联后未安装；R8 模块已通过入口检查和 API 102 隔离加载，但未追加整机重启注入验收。\n- VPN 按此前测试安排暂未连接验证；Android 9–15、其他 ROM、多用户与长时间息屏仍需相应环境验收。\n\n[完整版本记录](https://github.com/daxiaamu/Mobile-CPE/blob/v0.10.2/docs/RELEASE_0.10.2.md)\n\nAPK SHA-256：`c051038a3ef87e65b19aada13effe26b62471e0af3753df7a5f9e5aca9b4369e`\n",
+  "maxForcedVersionCode": 0,
+  "policyRevision": 2,
+  "sha256": "c051038a3ef87e65b19aada13effe26b62471e0af3753df7a5f9e5aca9b4369e",
+  "size": 2068257,
+  "urls": [
+    "https://v6.gh-proxy.org/https://github.com/daxiaamu/Mobile-CPE/releases/download/v0.10.2/PhoneCPE-0.10.2.apk",
+    "https://gh-proxy.org/https://github.com/daxiaamu/Mobile-CPE/releases/download/v0.10.2/PhoneCPE-0.10.2.apk",
+    "https://gh.3w.pm/https://github.com/daxiaamu/Mobile-CPE/releases/download/v0.10.2/PhoneCPE-0.10.2.apk",
+    "https://gh-proxy.com/https://github.com/daxiaamu/Mobile-CPE/releases/download/v0.10.2/PhoneCPE-0.10.2.apk",
+    "https://gh.monlor.com/https://github.com/daxiaamu/Mobile-CPE/releases/download/v0.10.2/PhoneCPE-0.10.2.apk",
+    "https://ghfast.top/https://github.com/daxiaamu/Mobile-CPE/releases/download/v0.10.2/PhoneCPE-0.10.2.apk",
+    "https://ghproxy.vip/https://github.com/daxiaamu/Mobile-CPE/releases/download/v0.10.2/PhoneCPE-0.10.2.apk?sha=c051038a3ef87e65b19aada13effe26b62471e0af3753df7a5f9e5aca9b4369e",
+    "https://ghproxy.net/https://github.com/daxiaamu/Mobile-CPE/releases/download/v0.10.2/PhoneCPE-0.10.2.apk",
+    "https://github.com/daxiaamu/Mobile-CPE/releases/download/v0.10.2/PhoneCPE-0.10.2.apk"
+  ],
+  "releaseUrl": "https://github.com/daxiaamu/Mobile-CPE/releases/tag/v0.10.2"
+}
