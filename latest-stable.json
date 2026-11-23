@@ -1,9 +1,9 @@
 {
   "schemaVersion": 1,
   "channel": "stable",
-  "policyRevision": 2,
-  "commit": "a29a9cf95bc89b0d752093db5e6887779b78397e",
-  "path": "manifests/2-43250186047e59f68a635fde93aa558eadd08e12a27f9b8a4aeecd415f7c57a1.json",
-  "manifestSha256": "43250186047e59f68a635fde93aa558eadd08e12a27f9b8a4aeecd415f7c57a1",
-  "expiresAt": "2027-11-20T09:04:28Z"
+  "policyRevision": 3,
+  "commit": "b130887483a77f5da4dfd13bd4804e1823088d83",
+  "path": "manifests/3-33b3b70b4f887c13a4f4148bafe65610c9363b9014cc2df7f766ce5f90a28d95.json",
+  "manifestSha256": "33b3b70b4f887c13a4f4148bafe65610c9363b9014cc2df7f766ce5f90a28d95",
+  "expiresAt": "2027-11-23T17:43:09Z"
 }
