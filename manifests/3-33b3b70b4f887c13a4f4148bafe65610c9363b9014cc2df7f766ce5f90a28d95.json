@@ -1,0 +1,24 @@
+{
+  "schemaVersion": 1,
+  "channel": "stable",
+  "versionCode": 33,
+  "versionName": "0.11.1",
+  "publishedAt": "2026-11-23T17:42:45Z",
+  "changelog": "手机CPE 0.11.1（versionCode 33），公开测试版，可从此前同签名版本覆盖升级。\n\n## 更新内容\n\n- 顶部新增 LTE/NR 载波信息与网络下发 AMBR，签约速率保持 M/s；MCPE 设置可查看主/辅载波、频段、带宽和读取状态。\n- 区分 LTE+NR 双连接与实际载波聚合，重复频点去重；换卡、切网和数据过期后清理旧值，无法确认的字段显示“—”。\n- 修复独立 ROOT 进程未初始化电话服务管理器，导致已插卡仍显示“无 SIM”的问题。\n- 蜂窝采集使用独立 ROOT 会话；MTK AMBR 查询限时、只读并核对通道、SIM 和连接归属，继续保持共享守护与用户期望。\n- Release 保持 R8 优化、混淆和资源压缩，APK 约 2.10 MB。\n\n## 实测与边界\n\n- 132 项核心测试、11 项更新发布器测试，Debug/Release 构建、lint、签名及 R8 入口检查通过。\n- 一加 9R / Android 14 已完成 ROOT 32→33 自动更新、真实 NR 回调、切网恢复、热点保持与关闭重开检查，偏好保持不变。\n- 本机只上报单个 NR 服务载波，频段/带宽缺失时显示“—”；本轮尚未实测多载波聚合、多 SIM 切换或真实 AMBR。\n- 当前 AMBR 仅接入部分 MTK 辅助通道，仍待 MTK 实机验收；一加 9R 等 Qualcomm 平台暂不支持。AMBR 是网络下发上限，不等同于套餐宣传速率或测速。\n- Android 9+ 需要 ROOT；以太网共享需要 Android 11+ 及系统和网卡驱动支持。已启用 LSP 模块的用户，更新后需重启才会加载新模块代码。\n\n[完整版本记录](https://github.com/daxiaamu/Mobile-CPE/blob/v0.11.1/docs/RELEASE_0.11.1.md)\n\nAPK SHA-256：`aec0e9b4b53e212ac23589037d2d0e2b534ce4d82089846b9d7b252f7204ac20`\n",
+  "maxForcedVersionCode": 0,
+  "policyRevision": 3,
+  "sha256": "aec0e9b4b53e212ac23589037d2d0e2b534ce4d82089846b9d7b252f7204ac20",
+  "size": 2101025,
+  "urls": [
+    "https://gh-proxy.com/https://github.com/daxiaamu/Mobile-CPE/releases/download/v0.11.1/PhoneCPE-0.11.1.apk",
+    "https://ghfast.top/https://github.com/daxiaamu/Mobile-CPE/releases/download/v0.11.1/PhoneCPE-0.11.1.apk",
+    "https://gh-proxy.org/https://github.com/daxiaamu/Mobile-CPE/releases/download/v0.11.1/PhoneCPE-0.11.1.apk",
+    "https://v6.gh-proxy.org/https://github.com/daxiaamu/Mobile-CPE/releases/download/v0.11.1/PhoneCPE-0.11.1.apk",
+    "https://gh.monlor.com/https://github.com/daxiaamu/Mobile-CPE/releases/download/v0.11.1/PhoneCPE-0.11.1.apk",
+    "https://gh.3w.pm/https://github.com/daxiaamu/Mobile-CPE/releases/download/v0.11.1/PhoneCPE-0.11.1.apk",
+    "https://ghproxy.vip/https://github.com/daxiaamu/Mobile-CPE/releases/download/v0.11.1/PhoneCPE-0.11.1.apk?sha=aec0e9b4b53e212ac23589037d2d0e2b534ce4d82089846b9d7b252f7204ac20",
+    "https://ghproxy.net/https://github.com/daxiaamu/Mobile-CPE/releases/download/v0.11.1/PhoneCPE-0.11.1.apk",
+    "https://github.com/daxiaamu/Mobile-CPE/releases/download/v0.11.1/PhoneCPE-0.11.1.apk"
+  ],
+  "releaseUrl": "https://github.com/daxiaamu/Mobile-CPE/releases/tag/v0.11.1"
+}
